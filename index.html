@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Naman Sports – Your trusted local sports equipment store in Gokul Township. Premium badminton, cricket, football, gym, swimming accessories and trophies." />
-  <meta name="keywords" content="Naman Sports, sports equipment, badminton, cricket, football, gym, swimming, trophies, Gokul Township" />
-  <meta name="author" content="Naman Sports" />
-  <title>Naman Sports | Everything in Sports Goods & Fitness</title>
+  <title>Naman Sports — Everything in Sports Goods & Fitness</title>
+  <meta name="description"
+    content="Naman Sports – Premium sports equipment, fitness essentials, repairs & services. Wide variety of swimming costumes, trophies, medals & more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- PRELOADER -->
   <div id="preloader">
     <div class="preloader-inner">
       <div class="preloader-logo">NS</div>
-      <div class="preloader-bar"><div class="preloader-fill"></div></div>
-      <p class="preloader-text">Loading Premium Experience...</p>
+      <div class="preloader-bar">
+        <div class="preloader-fill"></div>
+      </div>
     </div>
   </div>
 
   <!-- NAVBAR -->
-  <nav id="navbar" class="navbar">
+  <nav class="navbar">
     <div class="nav-container">
-      <div class="nav-logo">
-        <span class="logo-ns">NS</span>
-        <div class="logo-text">
-          <span class="logo-main">NAMAN SPORTS</span>
-          <span class="logo-tagline">Everything in Sports & Fitness</span>
-        </div>
-      </div>
+      <a href="index.html" class="nav-logo">
+        <div class="logo-ns">NS</div>
+        <div class="logo-text">Naman <span>Sports</span></div>
+      </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#catalogue" class="nav-link">Catalogue</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <a href="tel:9022679663" class="nav-cta">
+      <a href="https://wa.me/919022679663" class="nav-cta desktop-only" target="_blank" rel="noopener">
         <i class="fab fa-whatsapp"></i> Call Us
       </a>
       <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -49,857 +47,341 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <section id="home" class="hero">
-    <div class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="hero-particles" id="particles"></div>
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-slides">
+      <div class="hero-bg active"
+        style="background-image: radial-gradient(ellipse at 15% 50%, rgba(26, 79, 160, 0.18) 0%, transparent 60%), radial-gradient(ellipse at 85% 20%, rgba(220,38,38, 0.08) 0%, transparent 50%), url('images/hero-1.jpg');">
+      </div>
+      <div class="hero-bg"
+        style="background-image: radial-gradient(ellipse at 15% 50%, rgba(26, 79, 160, 0.18) 0%, transparent 60%), radial-gradient(ellipse at 85% 20%, rgba(220,38,38, 0.08) 0%, transparent 50%), url('images/hero-2.png');">
+      </div>
+      <div class="hero-bg"
+        style="background-image: radial-gradient(ellipse at 15% 50%, rgba(26, 79, 160, 0.18) 0%, transparent 60%), radial-gradient(ellipse at 85% 20%, rgba(220,38,38, 0.08) 0%, transparent 50%), url('images/hero-3.png');">
+      </div>
     </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
     <div class="hero-content">
-      <div class="hero-badge reveal">Premium Sports Since Day One</div>
+      <div class="hero-badge reveal">
+        <i class="fas fa-medal"></i> Premium Sports Since Day One
+      </div>
       <h1 class="hero-title reveal">
-        Everything in<br/><span class="accent-text">Sports Goods</span><br/>&amp; Fitness
+        Everything in <span class="gradient-text">Sports Goods</span> & Fitness
       </h1>
-      <p class="hero-subtitle reveal">Your one-stop destination for premium sports equipment &amp; fitness essentials.</p>
-      <div class="hero-actions reveal">
-        <a href="#catalogue" class="btn btn-primary btn-ripple">
-          <i class="fas fa-basketball"></i> Explore Collection
-        </a>
-        <a href="#contact" class="btn btn-ghost">
-          <i class="fas fa-map-marker-alt"></i> Find Our Store
-        </a>
+      <p class="hero-subtitle reveal">
+        Premium Sports Equipment &nbsp;|&nbsp; Fitness Essentials &nbsp;|&nbsp; Repairs & Services
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="products.html" class="btn btn-primary"><i class="fas fa-th-large"></i> Explore Products</a>
+        <a href="contact.html" class="btn btn-ghost"><i class="fas fa-store"></i> Visit Store</a>
       </div>
       <div class="hero-stats reveal">
-        <div class="stat"><span class="stat-num">6+</span><span class="stat-label">Sport Categories</span></div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="500" data-suffix="+">0</div>
+          <div class="stat-label">Products</div>
+        </div>
         <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Top Brands</span></div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="15" data-suffix="+">0</div>
+          <div class="stat-label">Brands</div>
+        </div>
         <div class="stat-divider"></div>
-        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Products</span></div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="9" data-suffix="">0</div>
+          <div class="stat-label">Categories</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-value" data-count="4" data-suffix="">0</div>
+          <div class="stat-label">Repair Services</div>
+        </div>
       </div>
     </div>
     <div class="hero-scroll-indicator">
       <span>Scroll Down</span>
       <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
     </div>
-    <!-- Floating sports icons -->
     <div class="floating-icons">
       <i class="fas fa-football float-icon" style="--delay:0s;--x:10%;--y:20%"></i>
       <i class="fas fa-basketball float-icon" style="--delay:1s;--x:85%;--y:30%"></i>
       <i class="fas fa-dumbbell float-icon" style="--delay:2s;--x:5%;--y:70%"></i>
       <i class="fas fa-trophy float-icon" style="--delay:0.5s;--x:90%;--y:70%"></i>
+      <i class="fas fa-table-tennis-paddle-ball float-icon" style="--delay:1.5s;--x:15%;--y:50%"></i>
+      <i class="fas fa-person-swimming float-icon" style="--delay:0.8s;--x:80%;--y:60%"></i>
     </div>
   </section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="about section">
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section" id="why">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Who We Are</span>
-        <h2 class="section-title">Your Trusted <span class="accent-text">Sports Partner</span></h2>
+        <span class="section-tag">Why Choose Us</span>
+        <h2 class="section-title">Your Trusted <span class="accent">Sports Partner</span></h2>
+        <p class="section-desc">We bring the best in sports equipment, fitness gear, and expert repair services — all
+          under one roof.</p>
       </div>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p class="about-desc">
-            <span class="highlight-letter">N</span>aman Sports is your trusted local sports equipment store offering premium quality products across badminton, cricket, football, gym equipment, swimming accessories, and trophies. Visit us in-store for the best deals and expert assistance from our passionate team.
-          </p>
-          <p class="about-desc">
-            Located in Gopani Center, Gokul Township, we've served athletes, students, and fitness enthusiasts with the widest selection of top brands including Yonex, SG, Nivia, Li-Ning, Konex, and many more.
-          </p>
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <strong>Open All Days</strong>
-                <span>11:00 AM – 9:30 PM</span>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <i class="fas fa-store"></i>
-              <div>
-                <strong>In-Store Only</strong>
-                <span>Come visit us directly</span>
-              </div>
-            </div>
-          </div>
+      <div class="why-grid">
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Wide Variety</h3>
+          <p>Hundreds of products across all sports categories to choose from.</p>
         </div>
-        <div class="about-features reveal">
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-medal"></i></div>
-            <h3>Quality Products</h3>
-            <p>We stock only certified, top-brand merchandise for every sport.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-users"></i></div>
-            <h3>All Age Groups</h3>
-            <p>From kids' beginner sets to professional athlete gear.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-tags"></i></div>
-            <h3>Trusted Brands</h3>
-            <p>Yonex, SG, Nivia, Li-Ning, Konex, Vector X &amp; more.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon"><i class="fas fa-headset"></i></div>
-            <h3>In-Store Assistance</h3>
-            <p>Expert staff ready to help you choose the right equipment.</p>
-          </div>
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon"><i class="fas fa-users"></i></div>
+          <h3>All Age Groups</h3>
+          <p>Equipment and apparel sized for kids, teens, and adults.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-icon"><i class="fas fa-award"></i></div>
+          <h3>Trusted Brands</h3>
+          <p>Yonex, SG, SS, Nivia, Tynor, Li-Ning and many more.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-4">
+          <div class="why-icon"><i class="fas fa-wrench"></i></div>
+          <h3>Expert Repairs</h3>
+          <p>Professional repair services for racquets, bats, skates & more.</p>
+        </div>
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-person-swimming"></i></div>
+          <h3>Swimming Specialists</h3>
+          <p>One of the widest varieties of swimming costumes for all ages.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CATALOGUE SECTION -->
-  <section id="catalogue" class="catalogue section">
+  <!-- ========== FEATURED CATEGORIES ========== -->
+  <section class="section bg-dark" id="categories">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-tag">What We Offer</span>
-        <h2 class="section-title">Our <span class="accent-text">Sports Catalogue</span></h2>
+        <h2 class="section-title">Our <span class="accent">Sports Catalogue</span></h2>
         <p class="section-desc">Click on any category to explore our full product range</p>
       </div>
-      <div class="category-grid">
+      <div class="cat-grid">
 
-        <!-- BADMINTON -->
-        <div class="cat-card reveal" onclick="openModal('badminton')" id="cat-badminton">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&q=80')"></div>
+        <!-- Badminton -->
+        <a href="products.html#badminton" class="cat-card reveal reveal-delay-1">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(26,58,107,0.6), rgba(13,27,51,0.8)), url('images/badminton.jpg') center/cover;">
+          </div>
           <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
-            <div class="cat-icon"><i class="fas fa-circle"></i></div>
-            <h3 class="cat-title">Badminton</h3>
-            <p class="cat-sub">Racquets · Shuttles · Shoes · Strings</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <div class="cat-icon"><i class="fas fa-table-tennis-paddle-ball"></i></div>
+            <h3>Badminton</h3>
+            <p>Racquets, shuttles, nets & more</p>
+            <div class="cat-brands"><span>Yonex</span><span>Li-Ning</span><span>Konex</span></div>
           </div>
-          <div class="cat-brands">
-            <span>Yonex</span><span>Li-Ning</span><span>Konex</span>
-          </div>
-        </div>
+        </a>
 
-        <!-- CRICKET -->
-        <div class="cat-card reveal" onclick="openModal('cricket')" id="cat-cricket">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&q=80')"></div>
+        <!-- Cricket -->
+        <a href="products.html#cricket" class="cat-card reveal reveal-delay-2">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(45,74,14,0.6), rgba(15,31,4,0.8)), url('images/cricket.jpg') center/cover;">
+          </div>
           <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
-            <div class="cat-icon"><i class="fas fa-circle"></i></div>
-            <h3 class="cat-title">Cricket</h3>
-            <p class="cat-sub">Bats · Balls · Accessories · Shoes</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <div class="cat-icon"><i class="fas fa-baseball-bat-ball"></i></div>
+            <h3>Cricket</h3>
+            <p>Bats, balls, shoes & accessories</p>
+            <div class="cat-brands"><span>SG</span><span>SS</span><span>SF</span><span>Konex</span></div>
           </div>
-          <div class="cat-brands">
-            <span>SG</span><span>SS</span><span>SF</span>
-          </div>
-        </div>
+        </a>
 
-        <!-- FOOTBALL -->
-        <div class="cat-card reveal" onclick="openModal('football')" id="cat-football">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&q=80')"></div>
+        <!-- Football -->
+        <a href="products.html#football" class="cat-card reveal reveal-delay-3">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(26,75,26,0.6), rgba(10,31,10,0.8)), url('images/football.jpg') center/cover;">
+          </div>
           <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
-            <div class="cat-icon"><i class="fas fa-circle"></i></div>
-            <h3 class="cat-title">Football</h3>
-            <p class="cat-sub">Balls · Jerseys · Studs · Accessories</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <div class="cat-icon"><i class="fas fa-futbol"></i></div>
+            <h3>Football</h3>
+            <p>Balls, jerseys, studs & gear</p>
+            <div class="cat-brands"><span>Nivia</span><span>Airavat</span></div>
           </div>
-          <div class="cat-brands">
-            <span>Nivia</span><span>Airavat</span><span>Vector X</span>
-          </div>
-        </div>
+        </a>
 
-        <!-- GYM -->
-        <div class="cat-card reveal" onclick="openModal('gym')" id="cat-gym">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80')"></div>
+        <!-- Swimming -->
+        <a href="products.html#swimming" class="cat-card reveal reveal-delay-1">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(12,61,95,0.5), rgba(5,31,51,0.7)), url('images/swimming.jpg') center/cover;">
+          </div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-content">
+            <div class="cat-icon"><i class="fas fa-person-swimming"></i></div>
+            <h3>Swimming</h3>
+            <p>Costumes, caps, goggles & fins</p>
+            <div class="cat-brands"><span>Wide Variety</span></div>
+          </div>
+        </a>
+
+        <!-- Gym -->
+        <a href="products.html#gym" class="cat-card reveal reveal-delay-2">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(61,28,28,0.6), rgba(26,10,10,0.8)), url('images/gym.jpg') center/cover;">
+          </div>
           <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
             <div class="cat-icon"><i class="fas fa-dumbbell"></i></div>
-            <h3 class="cat-title">Gym & Fitness</h3>
-            <p class="cat-sub">Gloves · Belts · Apparels · Accessories</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <h3>Gym & Fitness</h3>
+            <p>Dumbbells, gloves, dry-fit gear</p>
           </div>
-          <div class="cat-brands">
-            <span>Nivia</span><span>Konex</span><span>Generic</span>
-          </div>
-        </div>
+        </a>
 
-        <!-- SWIMMING -->
-        <div class="cat-card reveal" onclick="openModal('swimming')" id="cat-swimming">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1560090995-01632a28895b?w=600&q=80')"></div>
+        <!-- Boxing -->
+        <a href="products.html#boxing" class="cat-card reveal reveal-delay-3">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(90,16,16,0.6), rgba(42,5,5,0.8)), url('images/boxing.jpg') center/cover;">
+          </div>
           <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
-            <div class="cat-icon"><i class="fas fa-water"></i></div>
-            <h3 class="cat-title">Swimming</h3>
-            <p class="cat-sub">Caps · Goggles · Costumes · Fins</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <div class="cat-icon" style="background: var(--gradient-red);"><i class="fas fa-hand-fist"></i></div>
+            <h3>Boxing</h3>
+            <p>Gloves, bags & kits</p>
           </div>
-          <div class="cat-brands">
-            <span>Kids</span><span>Adult</span><span>Pro</span>
-          </div>
-        </div>
+        </a>
 
-        <!-- TROPHIES -->
-        <div class="cat-card reveal cat-card-trophy" onclick="openModal('trophies')" id="cat-trophies">
-          <div class="cat-card-bg" style="background-image:url('https://images.unsplash.com/photo-1564344679-58dd02f10a1e?w=600&q=80')"></div>
-          <div class="cat-card-overlay trophy-overlay"></div>
+        <!-- Trophies -->
+        <a href="products.html#trophies" class="cat-card reveal reveal-delay-1">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(74,56,0,0.6), rgba(31,23,0,0.8)), url('images/trophies.jpg') center/cover;">
+          </div>
+          <div class="cat-card-overlay"></div>
           <div class="cat-card-content">
-            <div class="cat-icon trophy-icon"><i class="fas fa-trophy"></i></div>
-            <h3 class="cat-title">Trophies & Mementos</h3>
-            <p class="cat-sub">Custom Trophies · Medals · Shields</p>
-            <span class="cat-explore">Explore <i class="fas fa-arrow-right"></i></span>
+            <div class="cat-icon" style="background: var(--gradient-gold);"><i class="fas fa-trophy"></i></div>
+            <h3>Trophies & Medals</h3>
+            <p>Premium awards & mementos</p>
           </div>
-          <div class="cat-brands">
-            <span>Gold</span><span>Silver</span><span>Custom</span>
+        </a>
+
+        <!-- Indoor Games -->
+        <a href="products.html#other" class="cat-card reveal reveal-delay-2">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(30,42,74,0.6), rgba(13,19,37,0.8)), url('images/indoor.jpg') center/cover;">
           </div>
-        </div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-content">
+            <div class="cat-icon"><i class="fas fa-chess"></i></div>
+            <h3>Indoor Games</h3>
+            <p>Chess, carrom, roller skates</p>
+          </div>
+        </a>
+
+        <!-- Medical -->
+        <a href="products.html#medical" class="cat-card reveal reveal-delay-3">
+          <div class="cat-card-bg"
+            style="background: linear-gradient(135deg, rgba(13,46,30,0.6), rgba(6,21,16,0.8)), url('images/medical.jpg') center/cover;">
+          </div>
+          <div class="cat-card-overlay"></div>
+          <div class="cat-card-content">
+            <div class="cat-icon" style="background: linear-gradient(135deg,#22c55e,#16a34a);"><i
+                class="fas fa-kit-medical"></i></div>
+            <h3>Medical Support</h3>
+            <p>Tynor braces & supports</p>
+          </div>
+        </a>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== MODALS ===================== -->
-
-  <!-- BADMINTON MODAL -->
-  <div class="modal-overlay" id="modal-badminton">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('badminton')"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <h2><i class="fas fa-circle"></i> Badminton Collection</h2>
-        <p>Premium badminton equipment from world-leading brands</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Badminton Racquets</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&q=80" alt="Yonex Racket" loading="lazy" />
-                <div class="product-badge">Yonex</div>
-              </div>
-              <div class="product-info"><h4>Yonex Rackets</h4><p>Professional Grade</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&q=80" alt="Li-Ning Racket" loading="lazy" />
-                <div class="product-badge">Li-Ning</div>
-              </div>
-              <div class="product-info"><h4>Li-Ning Rackets</h4><p>Tournament Series</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&q=80" alt="Konex Racket" loading="lazy" />
-                <div class="product-badge">Konex</div>
-              </div>
-              <div class="product-info"><h4>Konex Rackets</h4><p>Value for Money</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=400&q=80" alt="Airavat Racket" loading="lazy" />
-                <div class="product-badge">Airavat</div>
-              </div>
-              <div class="product-info"><h4>Airavat Rackets</h4><p>Beginner Friendly</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Shuttle Cocks</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1657664061449-d89b6e6ec3c6?w=400&q=80" alt="Yonex Feather Shuttle" loading="lazy" />
-                <div class="product-badge">Yonex</div>
-              </div>
-              <div class="product-info"><h4>Yonex Feather Shuttle</h4><p>Tournament Quality</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1657664061449-d89b6e6ec3c6?w=400&q=80" alt="Li-Ning Nylon Shuttle" loading="lazy" />
-                <div class="product-badge">Li-Ning</div>
-              </div>
-              <div class="product-info"><h4>Li-Ning Nylon Shuttle</h4><p>Durable Practice</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1657664061449-d89b6e6ec3c6?w=400&q=80" alt="Konex Shuttle" loading="lazy" />
-                <div class="product-badge">Konex</div>
-              </div>
-              <div class="product-info"><h4>Konex Shuttle</h4><p>Affordable Range</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Nets & Grips</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-grip-lines product-icon-large"></i>
-                <div class="product-badge">Kay Kay</div>
-              </div>
-              <div class="product-info"><h4>Kay Kay Net</h4><p>Professional Net</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-grip-lines product-icon-large"></i>
-                <div class="product-badge">Cosco</div>
-              </div>
-              <div class="product-info"><h4>Cosco Net</h4><p>Club Standard</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-wrench product-icon-large"></i>
-                <div class="product-badge">Yonex</div>
-              </div>
-              <div class="product-info"><h4>Yonex Grip Tape</h4><p>Superior Feel</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-wrench product-icon-large"></i>
-                <div class="product-badge">Li-Ning</div>
-              </div>
-              <div class="product-info"><h4>Li-Ning Grip</h4><p>Anti-Slip Formula</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Court Shoes</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Nivia Shoes" loading="lazy" />
-                <div class="product-badge">Nivia</div>
-              </div>
-              <div class="product-info"><h4>Nivia Court Shoes</h4><p>Grip & Comfort</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Yonex Shoes" loading="lazy" />
-                <div class="product-badge">Yonex</div>
-              </div>
-              <div class="product-info"><h4>Yonex Court Shoes</h4><p>Pro Series</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Li-Ning Shoes" loading="lazy" />
-                <div class="product-badge">Li-Ning</div>
-              </div>
-              <div class="product-info"><h4>Li-Ning Court Shoes</h4><p>Lightweight Design</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Services & Accessories</h3>
-          <div class="service-cards">
-            <div class="service-item"><i class="fas fa-tools"></i><div><strong>String Repair</strong><span>Starting at ₹50 only</span></div></div>
-            <div class="service-item"><i class="fas fa-bag-shopping"></i><div><strong>Kit Bags</strong><span>Multiple brands available</span></div></div>
-            <div class="service-item"><i class="fas fa-shirt"></i><div><strong>Jerseys</strong><span>Custom & Ready-made</span></div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CRICKET MODAL -->
-  <div class="modal-overlay" id="modal-cricket">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('cricket')"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <h2><i class="fas fa-circle"></i> Cricket Collection</h2>
-        <p>India's favourite sport — best equipment at best prices</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Cricket Bats</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&q=80" alt="SS Bat" loading="lazy" />
-                <div class="product-badge">SS</div>
-              </div>
-              <div class="product-info"><h4>SS Kashmir Willow</h4><p>Hard Tennis / Season</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&q=80" alt="SG Bat" loading="lazy" />
-                <div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Season Bat</h4><p>English Willow Grade</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=400&q=80" alt="SF Bat" loading="lazy" />
-                <div class="product-badge">SF</div>
-              </div>
-              <div class="product-info"><h4>SF Fiber Bat</h4><p>Fiber & Tennis</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-baseball-bat-ball product-icon-large"></i>
-                <div class="product-badge">Konex</div>
-              </div>
-              <div class="product-info"><h4>Konex Plastic Bat</h4><p>Kids & Soft Tennis</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Cricket Balls</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark red-bg">
-                <i class="fas fa-circle product-icon-large" style="color:#c0392b"></i>
-                <div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Leather Ball</h4><p>Red & White Available</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-circle product-icon-large" style="color:#f0e68c"></i>
-                <div class="product-badge">Tennex</div>
-              </div>
-              <div class="product-info"><h4>Tennex Tennis Ball</h4><p>Soft & Rubber Core</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-wind product-icon-large"></i>
-                <div class="product-badge">Wind Ball</div>
-              </div>
-              <div class="product-info"><h4>Wind Ball</h4><p>Practice & Training</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-circle product-icon-large"></i>
-                <div class="product-badge">Hanging</div>
-              </div>
-              <div class="product-info"><h4>Hanging Ball</h4><p>Batting Practice</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Protective Accessories</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-shield-halved product-icon-large"></i><div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Leg Guard</h4><p>Full Protection</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-hand-rock product-icon-large"></i><div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Batting Gloves</h4><p>Superior Grip</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-hard-hat product-icon-large"></i><div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Helmet</h4><p>Certified Protection</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark">
-                <i class="fas fa-bag-shopping product-icon-large"></i><div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Kit Bags</h4><p>Thigh Pad, Elbow Guard</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Cricket Shoes</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="SG Shoes" loading="lazy" />
-                <div class="product-badge">SG</div>
-              </div>
-              <div class="product-info"><h4>SG Cricket Shoes</h4><p>Spiked & Rubber Sole</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Gowin Shoes" loading="lazy" />
-                <div class="product-badge">Gowin</div>
-              </div>
-              <div class="product-info"><h4>Gowin Cricket Shoes</h4><p>Affordable & Sturdy</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Vector X Shoes" loading="lazy" />
-                <div class="product-badge">Vector X</div>
-              </div>
-              <div class="product-info"><h4>Vector X Shoes</h4><p>Premium Performance</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTBALL MODAL -->
-  <div class="modal-overlay" id="modal-football">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('football')"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <h2><i class="fas fa-futbol"></i> Football Collection</h2>
-        <p>From street football to FIFA-approved professional gear</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Footballs</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80" alt="Nivia Football" loading="lazy" />
-                <div class="product-badge">Nivia</div>
-              </div>
-              <div class="product-info"><h4>Nivia Footballs</h4><p>Club & Match Grade</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80" alt="Airavat Football" loading="lazy" />
-                <div class="product-badge">Airavat</div>
-              </div>
-              <div class="product-info"><h4>Airavat Footballs</h4><p>Durable Range</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=400&q=80" alt="FIFA Football" loading="lazy" />
-                <div class="product-badge">FIFA</div>
-              </div>
-              <div class="product-info"><h4>FIFA Approved Balls</h4><p>Professional Level</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Footwear</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Nivia Studs" loading="lazy" />
-                <div class="product-badge">Nivia</div>
-              </div>
-              <div class="product-info"><h4>Nivia Studs</h4><p>Turf & Grass</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Vector X Studs" loading="lazy" />
-                <div class="product-badge">Vector X</div>
-              </div>
-              <div class="product-info"><h4>Vector X Studs</h4><p>Pro Performance</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Futsal Shoes" loading="lazy" />
-                <div class="product-badge">Futsal</div>
-              </div>
-              <div class="product-info"><h4>Futsal Shoes</h4><p>Nivia & Vector X</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Accessories</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-socks product-icon-large"></i><div class="product-badge">Nivia</div></div>
-              <div class="product-info"><h4>Stockings</h4><p>Grip & Regular</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-shield product-icon-large"></i><div class="product-badge">Konex</div></div>
-              <div class="product-info"><h4>Shin Pads</h4><p>Light & Heavy</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-location-pin product-icon-large"></i></div>
-              <div class="product-info"><h4>Cones & Markers</h4><p>Training Essentials</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-flag product-icon-large" style="color:#ff3333"></i></div>
-              <div class="product-info"><h4>Corner Flags</h4><p>Standard Size</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- GYM MODAL -->
-  <div class="modal-overlay" id="modal-gym">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('gym')"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <h2><i class="fas fa-dumbbell"></i> Gym & Fitness</h2>
-        <p>Everything you need to train harder and recover faster</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Support & Protection</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&q=80" alt="Gym Gloves" loading="lazy" />
-                <div class="product-badge">Nivia</div>
-              </div>
-              <div class="product-info"><h4>Gym Gloves</h4><p>Anti-Slip Grip</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-hand-back-fist product-icon-large"></i><div class="product-badge">Konex</div></div>
-              <div class="product-info"><h4>Weight Lifting Straps</h4><p>Wrist Support</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-circle product-icon-large"></i><div class="product-badge">Generic</div></div>
-              <div class="product-info"><h4>Weight Belt</h4><p>Lumbar Support</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-hands-holding product-icon-large"></i></div>
-              <div class="product-info"><h4>Wrist Support</h4><p>Injury Prevention</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Apparel & Accessories</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-tshirt product-icon-large"></i></div>
-              <div class="product-info"><h4>Dry Fit Apparel</h4><p>Breathable & Light</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-person-running product-icon-large"></i></div>
-              <div class="product-info"><h4>Compression Tights</h4><p>Full Body Inner</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-bottle-water product-icon-large"></i></div>
-              <div class="product-info"><h4>Shakers & Sippers</h4><p>Protein Shakers</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark"><i class="fas fa-suitcase-rolling product-icon-large"></i></div>
-              <div class="product-info"><h4>Duffle Bags</h4><p>Sweat Bands, Head Bands</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SWIMMING MODAL -->
-  <div class="modal-overlay" id="modal-swimming">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('swimming')"><i class="fas fa-times"></i></button>
-      <div class="modal-header">
-        <h2><i class="fas fa-water"></i> Swimming Collection</h2>
-        <p>From learners to professionals — complete swimming gear</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Swimming Gear</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1560090995-01632a28895b?w=400&q=80" alt="Swimming Cap" loading="lazy" />
-                <div class="product-badge">Silicone</div>
-              </div>
-              <div class="product-info"><h4>Swimming Caps</h4><p>All Sizes Available</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap">
-                <img src="https://images.unsplash.com/photo-1560090995-01632a28895b?w=400&q=80" alt="Goggles" loading="lazy" />
-                <div class="product-badge">Pro</div>
-              </div>
-              <div class="product-info"><h4>Swimming Goggles</h4><p>UV &amp; Anti-fog</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark blue-bg"><i class="fas fa-shoe-prints product-icon-large" style="color:#4fc3f7"></i></div>
-              <div class="product-info"><h4>Swim Fins</h4><p>Speed Training</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark blue-bg"><i class="fas fa-circle-dot product-icon-large" style="color:#4fc3f7"></i></div>
-              <div class="product-info"><h4>Ear Buds</h4><p>Waterproof</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Swimwear / Costumes</h3>
-          <div class="product-grid">
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark blue-bg"><i class="fas fa-child product-icon-large" style="color:#4fc3f7"></i></div>
-              <div class="product-info"><h4>Kids Costumes</h4><p>Boys & Girls Range</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark blue-bg"><i class="fas fa-person product-icon-large" style="color:#4fc3f7"></i></div>
-              <div class="product-info"><h4>Adult Swimwear</h4><p>Full Sleeve / Half Sleeve</p></div>
-            </div>
-            <div class="product-card">
-              <div class="product-img-wrap product-img-wrap--dark blue-bg"><i class="fas fa-venus product-icon-large" style="color:#4fc3f7"></i></div>
-              <div class="product-info"><h4>One Piece Costumes</h4><p>Ladies Collection</p></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- TROPHIES MODAL -->
-  <div class="modal-overlay" id="modal-trophies">
-    <div class="modal-box">
-      <button class="modal-close" onclick="closeModal('trophies')"><i class="fas fa-times"></i></button>
-      <div class="modal-header trophy-modal-header">
-        <h2><i class="fas fa-trophy"></i> Trophies &amp; Mementos</h2>
-        <p>Celebrate Victory with Premium Trophies & Mementos</p>
-      </div>
-      <div class="modal-body">
-        <div class="subcategory">
-          <h3 class="subcat-title"><i class="fas fa-angle-right"></i> Trophy Gallery</h3>
-          <div class="product-grid trophy-gallery">
-            <div class="product-card trophy-card">
-              <div class="product-img-wrap trophy-img-wrap">
-                <img src="https://images.unsplash.com/photo-1564344679-58dd02f10a1e?w=400&q=80" alt="Gold Trophy" loading="lazy" />
-                <div class="trophy-shimmer"></div>
-              </div>
-              <div class="product-info"><h4>Gold Trophy</h4><p>Premium Award</p></div>
-            </div>
-            <div class="product-card trophy-card">
-              <div class="product-img-wrap trophy-img-wrap">
-                <img src="https://images.unsplash.com/photo-1527481138388-31827a7c94d5?w=400&q=80" alt="Silver Trophy" loading="lazy" />
-                <div class="trophy-shimmer"></div>
-              </div>
-              <div class="product-info"><h4>Silver Trophy</h4><p>Runner Up Series</p></div>
-            </div>
-            <div class="product-card trophy-card">
-              <div class="product-img-wrap trophy-img-wrap">
-                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&q=80" alt="Medal" loading="lazy" />
-                <div class="trophy-shimmer"></div>
-              </div>
-              <div class="product-info"><h4>Sports Medals</h4><p>Gold, Silver, Bronze</p></div>
-            </div>
-            <div class="product-card trophy-card">
-              <div class="product-img-wrap trophy-img-wrap">
-                <img src="https://images.unsplash.com/photo-1564344679-58dd02f10a1e?w=400&q=80" alt="Custom Trophy" loading="lazy" />
-                <div class="trophy-shimmer"></div>
-              </div>
-              <div class="product-info"><h4>Custom Mementos</h4><p>Personalized Awards</p></div>
-            </div>
-          </div>
-        </div>
-        <div class="trophy-cta-box">
-          <i class="fas fa-star"></i>
-          <p>Visit our store for the complete trophy collection and custom engraving services</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact section">
+  <!-- ========== EXPERTISE HIGHLIGHT ========== -->
+  <section class="section expertise-section" id="expertise">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Get In Touch</span>
-        <h2 class="section-title">Visit <span class="accent-text">Our Store</span></h2>
-        <p class="section-desc">We're open all days – come in for the best sports shopping experience</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <div class="contact-card">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div class="contact-detail">
-                <h4>Our Address</h4>
-                <p>Shop No 10 &amp; 11, Gopani Center,<br/>Gokul Township, Near Axis Bank<br/>&amp; Naturals Ice Cream</p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-clock"></i></div>
-              <div class="contact-detail">
-                <h4>Opening Hours</h4>
-                <p><strong>11:00 AM – 9:30 PM</strong><br/><span class="open-badge">Open All Days</span></p>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-detail">
-                <h4>Phone Numbers</h4>
-                <p>
-                  <a href="https://wa.me/919022679663" class="whatsapp-link" target="_blank" rel="noopener">
-                    <i class="fab fa-whatsapp"></i> 9022679663
-                  </a><br/>
-                  <a href="tel:9096683405" class="phone-link">9096683405</a>
-                </p>
-              </div>
-            </div>
-            <div class="contact-item purchase-mode">
-              <div class="contact-icon"><i class="fas fa-store"></i></div>
-              <div class="contact-detail">
-                <h4>Purchase Mode</h4>
-                <p>In-Store Purchases Only.<br/>No online checkout — visit us directly!</p>
-              </div>
-            </div>
-            <a href="https://wa.me/919022679663" class="btn btn-primary btn-ripple btn-whatsapp" target="_blank" rel="noopener">
-              <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-            </a>
-          </div>
+      <div class="expertise-grid">
+        <div class="expertise-visual reveal">
+          <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=600&q=80" alt="Trophies and Medals"
+            style="width:100%; max-width:400px; border-radius:var(--radius-lg); box-shadow: 0 20px 60px rgba(245,183,49,0.2);" />
         </div>
-        <div class="contact-map reveal">
-          <div class="map-container">
-            <iframe
-              title="Naman Sports Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.2!2d72.85!3d21.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDA5JzAwLjAiTiA3MsKwNTEnMDAuMCJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
-          <div class="map-cta">
-            <a href="https://www.google.com/maps/search/Gopani+Center+Gokul+Township+Surat" target="_blank" rel="noopener" class="btn btn-ghost btn-directions">
-              <i class="fas fa-directions"></i> Get Directions
-            </a>
+        <div class="expertise-text reveal">
+          <span class="section-tag">Our Expertise</span>
+          <h2>Unmatched Selection of <span class="text-gold">Trophies</span> & <span class="text-accent">Swimming
+              Costumes</span></h2>
+          <p>We specialize in offering one of the widest varieties of swimming costumes for all age groups — kids,
+            teens, and adults — in full sleeve, half sleeve, and one-piece styles. Alongside this, we carry a premium
+            collection of medals, trophies, and mementos for every occasion, making us your one-stop sports showroom.
+          </p>
+          <div style="margin-top:1.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="products.html#swimming" class="btn btn-primary"><i class="fas fa-person-swimming"></i> Swimming
+              Collection</a>
+            <a href="products.html#trophies" class="btn btn-gold"><i class="fas fa-trophy"></i> Trophies & Medals</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="nav-logo">
-              <span class="logo-ns">NS</span>
-              <div class="logo-text">
-                <span class="logo-main">NAMAN SPORTS</span>
-                <span class="logo-tagline">Everything in Sports & Fitness</span>
-              </div>
-            </div>
-            <p class="footer-desc">Your trusted local sports equipment store offering premium quality products for all sport categories.</p>
-            <div class="footer-socials">
-              <a href="https://wa.me/919022679663" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-            </div>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <div class="logo-ns">NS</div>
+            <span>Naman Sports</span>
           </div>
-          <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#catalogue">Catalogue</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+          <p>Your one-stop shop for premium sports equipment, fitness gear, swimming costumes, trophies, and expert
+            repair services.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/919022679663" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="tel:+919022679663" aria-label="Phone"><i class="fas fa-phone"></i></a>
           </div>
-          <div class="footer-links">
-            <h4>Categories</h4>
-            <ul>
-              <li><a href="#" onclick="openModal('badminton');return false;">Badminton</a></li>
-              <li><a href="#" onclick="openModal('cricket');return false;">Cricket</a></li>
-              <li><a href="#" onclick="openModal('football');return false;">Football</a></li>
-              <li><a href="#" onclick="openModal('gym');return false;">Gym & Fitness</a></li>
-              <li><a href="#" onclick="openModal('swimming');return false;">Swimming</a></li>
-              <li><a href="#" onclick="openModal('trophies');return false;">Trophies</a></li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p><i class="fas fa-map-marker-alt"></i> Shop 10 &amp; 11, Gopani Center, Gokul Township</p>
-            <p><i class="fas fa-clock"></i> 11:00 AM – 9:30 PM · Open All Days</p>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919022679663" target="_blank" rel="noopener">9022679663</a></p>
-            <p><i class="fas fa-phone"></i> <a href="tel:9096683405">9096683405</a></p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html#badminton">Badminton</a></li>
+            <li><a href="products.html#cricket">Cricket</a></li>
+            <li><a href="products.html#football">Football</a></li>
+            <li><a href="products.html#swimming">Swimming</a></li>
+            <li><a href="products.html#gym">Gym & Fitness</a></li>
+            <li><a href="products.html#trophies">Trophies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Store Info</h4>
+          <p><i class="fas fa-map-marker-alt text-accent"></i> Shop No 10 & 11, Gopani Center, Gokul Township, Near Axis
+            Bank & Naturals Ice Cream</p>
+          <p style="margin-top:0.7rem;"><i class="fas fa-clock text-accent"></i> 11:00 AM – 9:30 PM (Open All Days)</p>
+          <p style="margin-top:0.7rem;">
+            <i class="fas fa-phone text-accent"></i>
+            <a href="tel:+919022679663">9022679663</a>
+            <a href="https://wa.me/919022679663" target="_blank" rel="noopener"
+              style="color:var(--accent-green);margin-left:0.3rem;"><i class="fab fa-whatsapp"></i></a>
+          </p>
+          <p><i class="fas fa-phone text-accent"></i> <a href="tel:+919096683405">9096683405</a></p>
+          <div class="map-container" style="margin-top:1rem;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.123!2d72.89!3d19.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA5JzAwLjAiTiA3MsKwNTMnMjQuMCJF!5e0!3m2!1sen!2sin!4v1700000000000"
+              allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2025 Naman Sports. All rights reserved. | Designed with <i class="fas fa-heart" style="color:#ff3333"></i> for sports lovers.</p>
+      <div class="footer-bottom">
+        &copy; 2026 Naman Sports. All Rights Reserved. | In-Store Purchases Only
       </div>
     </div>
   </footer>
 
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/919022679663" class="whatsapp-float" target="_blank" rel="noopener"
+    aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
   <script src="script.js"></script>
 </body>
+
 </html>

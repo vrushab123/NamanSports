@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Naman Sports Catalogue</title>
+    <meta name="description"
+        content="Browse the complete Naman Sports catalogue: Badminton, Cricket, Football, Boxing, Gym, Swimming, Trophies, Indoor Games, Medical Support." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">NS</div>
+            <div class="preloader-bar">
+                <div class="preloader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-ns">NS</div>
+                <div class="logo-text">Naman <span>Sports</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/919022679663" class="nav-cta desktop-only" target="_blank" rel="noopener">
+                <i class="fab fa-whatsapp"></i> Call Us
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-badge reveal"><i class="fas fa-store"></i> Full Product Catalogue</div>
+            <h1 class="reveal">Our <span class="gradient-text">Products</span></h1>
+            <p class="reveal">Browse our complete range of sports equipment, fitness gear, and accessories.</p>
+        </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 0;">
+        <div class="container">
+            <div class="filter-bar reveal">
+                <button class="filter-btn active" data-category="all">All Categories</button>
+                <button class="filter-btn" data-category="badminton"><i class="fas fa-table-tennis-paddle-ball"></i>
+                    Badminton</button>
+                <button class="filter-btn" data-category="cricket"><i class="fas fa-baseball-bat-ball"></i>
+                    Cricket</button>
+                <button class="filter-btn" data-category="football"><i class="fas fa-futbol"></i> Football</button>
+                <button class="filter-btn" data-category="boxing"><i class="fas fa-hand-fist"></i> Boxing</button>
+                <button class="filter-btn" data-category="gym"><i class="fas fa-dumbbell"></i> Gym</button>
+                <button class="filter-btn" data-category="swimming"><i class="fas fa-person-swimming"></i>
+                    Swimming</button>
+                <button class="filter-btn" data-category="other"><i class="fas fa-chess"></i> Indoor</button>
+                <button class="filter-btn" data-category="trophies"><i class="fas fa-trophy"></i> Trophies</button>
+                <button class="filter-btn" data-category="medical"><i class="fas fa-kit-medical"></i> Medical</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================================== -->
+    <!-- BADMINTON SECTION -->
+    <!-- ====================================== -->
+    <div class="product-section" data-category="badminton" id="badminton">
+        <div class="container">
+            <img src="images/badminton.jpg" alt="Badminton equipment" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-table-tennis-paddle-ball"></i></div>
+                <div>
+                    <div class="product-section-title">Badminton <small>Racquets, Shuttles, Shoes & Accessories</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-racket.jpg" alt="Badminton Racquets" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Racquets</h4>
+                        <p>Professional grade racquets for every level.</p>
+                        <div class="brand-list">
+                            <span>Yonex</span><span>Li-Ning</span><span>Konex</span><span>Airavat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-shuttle.jpg" alt="Shuttle Cocks" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Shuttle Cocks</h4>
+                        <p>Feather and nylon shuttlecocks for practice & tournaments.</p>
+                        <div class="brand-list"><span>Feather</span><span>Nylon</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-net.jpg" alt="Badminton Nets" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Nets</h4>
+                        <p>Durable badminton nets for home and court setup.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-grip.jpg" alt="Racquet Grips" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Grips</h4>
+                        <p>Premium replacement grips for better handle and control.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-shoes.jpg" alt="Court Shoes" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Court Shoes</h4>
+                        <p>Non-marking shoes designed for court sports.</p>
+                        <div class="brand-list"><span>Nivia</span><span>Yonex</span><span>Li-Ning</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-bag.jpg" alt="Kit Bags" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Kit Bags</h4>
+                        <p>Spacious bags to carry all your badminton gear.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-jersey.jpg" alt="Jerseys" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Jerseys</h4>
+                        <p>Breathable sports jerseys for training and matches.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-note reveal">
+                <i class="fas fa-wrench"></i> Badminton String Repair starting ₹50
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- CRICKET SECTION -->
+    <!-- ====================================== -->
+    <div class="product-section" data-category="cricket" id="cricket">
+        <div class="container">
+            <img src="images/cricket.jpg" alt="Cricket equipment" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-baseball-bat-ball"></i></div>
+                <div>
+                    <div class="product-section-title">Cricket <small>Bats, Balls, Shoes & Protective Gear</small></div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bat-1.jpg" alt="Cricket Bats" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Soft Tennis Bats</h4>
+                        <p>Lightweight bats ideal for tennis ball cricket.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bat-2.jpg" alt="Hard Tennis Bats" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Hard Tennis Bats</h4>
+                        <p>Reinforced bats for hard tennis ball play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bat-1.jpg" alt="Fiber Bats" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Fiber Bats</h4>
+                        <p>Durable fiber bats for all-level players.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bat-2.jpg" alt="Season Bats" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Season Bats</h4>
+                        <p>Full-size English willow bats for season play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bat-1.jpg" alt="Kashmir Willow Bats" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Kashmir Willow Bats</h4>
+                        <p>Traditional Kashmir willow — great balance and power.</p>
+                        <div class="brand-list"><span>SG</span><span>SS</span><span>SF</span><span>Konex</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-shoes.jpg" alt="Cricket Shoes" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Cricket Shoes</h4>
+                        <p>Spiked and rubber-sole cricket shoes.</p>
+                        <div class="brand-list"><span>SG</span><span>Gowin</span><span>Vector X</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-ball-leather.jpg" alt="Leather Balls" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>SG Leather Balls</h4>
+                        <p>Premium leather balls in red and white.</p>
+                        <div class="brand-list"><span>Red</span><span>White</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-ball-1.jpg" alt="Tennis Balls" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Tennis Balls</h4>
+                        <p>Tennex tennis balls for gully and practice cricket.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-ball-1.jpg" alt="Wind Balls" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Hanging & Wind Balls</h4>
+                        <p>Training balls for swing and pace practice.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-ball-1.jpg" alt="Synthetic Balls" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Synthetic Balls</h4>
+                        <p>Durable synthetic balls for indoor and casual play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-pads.jpg" alt="Leg Guards" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Leg Guards & Pads</h4>
+                        <p>Leg guards and thigh pads for batting protection.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-gloves.jpg" alt="Gloves" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Gloves</h4>
+                        <p>Batting and wicket-keeping gloves.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-pads.jpg" alt="Elbow Guards" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Elbow Guards</h4>
+                        <p>Protective elbow guards for batsmen.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-helmet.jpg" alt="Helmets" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Helmets</h4>
+                        <p>ISI-standard cricket helmets with face guard.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-cri-bag.jpg" alt="Kit Bags" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Kit Bags</h4>
+                        <p>Full-size kit bags with wheels and compartments.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-jersey.jpg" alt="Arm Sleeves" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Arm Sleeves</h4>
+                        <p>UV-protection compression arm sleeves.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-note reveal">
+                <i class="fas fa-wrench"></i> Cricket Bat Repairs Available
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- FOOTBALL SECTION -->
+    <!-- ====================================== -->
+    <div class="product-section" data-category="football" id="football">
+        <div class="container">
+            <img src="images/football.jpg" alt="Football equipment" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-futbol"></i></div>
+                <div>
+                    <div class="product-section-title">Football <small>Balls, Jerseys, Shoes & Training Gear</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="Football" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Nivia Footballs</h4>
+                        <p>Match and training footballs in all sizes.</p>
+                        <div class="brand-list"><span>Nivia</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="Airavat Football" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Airavat Footballs</h4>
+                        <p>Durable stadium-quality footballs.</p>
+                        <div class="brand-list"><span>Airavat</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="FIFA Approved Ball" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>FIFA Approved Balls</h4>
+                        <p>FIFA-level approved match balls for professional play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-jersey.jpg" alt="Football Jerseys" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Jerseys</h4>
+                        <p>Team and club jerseys — dry-fit and breathable.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-shin.jpg" alt="Shin Pads" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Shin Pads</h4>
+                        <p>Lightweight protective shin pads for match play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/indoor.jpg" alt="Training Cones" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Cones & Markers</h4>
+                        <p>Training cones and agility markers.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/football.jpg" alt="Corner Flags" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Corner Flags</h4>
+                        <p>Standard corner flags for football pitches.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-shoes.jpg" alt="Football Studs" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Studs & Futsal Shoes</h4>
+                        <p>Football studs and indoor futsal shoes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-note reveal">
+                <i class="fas fa-wrench"></i> Football Repairing Available
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- BOXING SECTION -->
+    <!-- ====================================== -->
+    <div class="product-section boxing-section" data-category="boxing" id="boxing">
+        <div class="container">
+            <img src="images/boxing.jpg" alt="Boxing equipment" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-hand-fist"></i></div>
+                <div>
+                    <div class="product-section-title">Boxing <small>Gloves, Bags, Wraps & Protective Gear</small></div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-box-gloves.jpg" alt="Boxing Gloves" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Boxing Gloves</h4>
+                        <p>Training and sparring gloves in multiple weights.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-box-bag.jpg" alt="Punching Bag" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Punching Bags</h4>
+                        <p>Heavy bags, speed bags, and free-standing bags.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-box-gloves.jpg" alt="Hand Wraps" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Hand Wraps</h4>
+                        <p>Elastic and cotton hand wraps for wrist protection.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-box-head.jpg" alt="Head Guards" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Head Guards</h4>
+                        <p>Full-face and open-face head guards for sparring.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-box-kit.jpg" alt="Boxing Kit" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Boxing Kits</h4>
+                        <p>Complete boxing kits with gloves, wraps, and bag.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- GYM & FITNESS SECTION -->
+    <!-- ====================================== -->
+    <div class="product-section" data-category="gym" id="gym">
+        <div class="container">
+            <img src="images/gym.jpg" alt="Gym equipment" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-dumbbell"></i></div>
+                <div>
+                    <div class="product-section-title">Gym & Fitness <small>Equipment, Apparel & Accessories</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-gym-weights.jpg" alt="Dumbbells" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Dumbbells</h4>
+                        <p>Rubber-coated and cast-iron dumbbells in all weights.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-gym-ball.jpg" alt="Exercise Ball" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Exercise Balls</h4>
+                        <p>Anti-burst exercise balls for yoga and pilates.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-box-gloves.jpg" alt="Gym Gloves" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Gym Gloves</h4>
+                        <p>Padded grip gloves for weightlifting.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/medical.jpg" alt="Wrist Support" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Wrist Support</h4>
+                        <p>Adjustable wrist wraps for heavy lifts.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/gym.jpg" alt="Weight Belt" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Weight Belts</h4>
+                        <p>Leather and nylon weight belts for back support.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/gym.jpg" alt="Lifting Straps" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Lifting Straps</h4>
+                        <p>Heavy-duty straps for deadlifts and rows.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-gym-wear.jpg" alt="Compression Wear" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Compression Wear</h4>
+                        <p>Full-body compression tights and tops.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-bad-jersey.jpg" alt="Dry Fit" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Dry Fit Apparel</h4>
+                        <p>Moisture-wicking t-shirts, shorts and tanks.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-gym-shaker.jpg" alt="Shaker Bottle" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Sippers & Shakers</h4>
+                        <p>BPA-free sippers and protein shaker bottles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- SWIMMING SECTION (HIGHLIGHT) -->
+    <!-- ====================================== -->
+    <div class="product-section swimming-section" data-category="swimming" id="swimming">
+        <div class="container">
+            <div class="badge-highlight reveal"><i class="fas fa-star"></i> Wide Variety Available</div>
+            <img src="images/swimming.jpg" alt="Swimming pool" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-person-swimming"></i></div>
+                <div>
+                    <div class="product-section-title">Swimming <small>Costumes, Caps, Goggles & Accessories</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-swi-cap.jpg" alt="Swimming Caps" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Swimming Caps</h4>
+                        <p>Silicone and lycra swim caps in all sizes.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-swi-goggles.jpg" alt="Goggles" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Goggles</h4>
+                        <p>Anti-fog and UV-protection swimming goggles.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-swi-fins.jpg" alt="Swim Fins" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Fins</h4>
+                        <p>Training fins for improved kick technique.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-swi-goggles.jpg" alt="Ear Buds" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Ear Buds</h4>
+                        <p>Waterproof ear plugs for swimmers.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/swimming.jpg" alt="Full Sleeve Costumes" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Full Sleeve Costumes</h4>
+                        <p>Full-coverage swimwear for all age groups.</p>
+                        <div class="brand-list"><span>Kids</span><span>Adults</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/swimming.jpg" alt="Half Sleeve Costumes" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Half Sleeve Costumes</h4>
+                        <p>Comfortable half-sleeve swim suits.</p>
+                        <div class="brand-list"><span>Kids</span><span>Adults</span></div>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/swimming.jpg" alt="One Piece Costumes" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>One Piece Costumes</h4>
+                        <p>Classic one-piece competitive swimwear.</p>
+                        <div class="brand-list"><span>Kids</span><span>Adults</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- OTHER SPORTS & INDOOR GAMES -->
+    <!-- ====================================== -->
+    <div class="product-section" data-category="other" id="other">
+        <div class="container">
+            <img src="images/indoor.jpg" alt="Indoor games" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-chess"></i></div>
+                <div>
+                    <div class="product-section-title">Other Sports & Indoor Games <small>Volleyball, Basketball,
+                            Skating & Board Games</small></div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="Volleyball" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Volleyballs</h4>
+                        <p>Match and training volleyballs.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="Throwball" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Throwballs</h4>
+                        <p>Official-size throwballs for school and clubs.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-foo-ball.jpg" alt="Basketball" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Basketballs</h4>
+                        <p>Indoor and outdoor basketballs.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/Skates-roller.jpg" alt="Roller Skates" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Roller Skates</h4>
+                        <p>Quad and inline skates for all ages.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-ind-chess.jpg" alt="Chess" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Chess</h4>
+                        <p>Premium chess boards and pieces.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/indoor.jpg" alt="Champion Boards" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Champion Boards</h4>
+                        <p>Champion board games for recreational play.</p>
+                    </div>
+                </div>
+                <div class="product-card reveal">
+                    <img src="images/prod-ind-carrom.jpg" alt="Carrom Board" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Carrom Boards</h4>
+                        <p>Regulation-size carrom boards with coins.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-note reveal">
+                <i class="fas fa-wrench"></i> Roller Skate Repairing Available
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- TROPHIES, MEDALS & MEMENTOS -->
+    <!-- ====================================== -->
+    <div class="product-section trophy-section" data-category="trophies" id="trophies">
+        <div class="container">
+            <img src="images/trophies.jpg" alt="Trophies and medals" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon"><i class="fas fa-trophy"></i></div>
+                <div>
+                    <div class="product-section-title">Trophies, Medals & Mementos <small>Premium Awards for Every
+                            Occasion</small></div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card trophy-card reveal">
+                    <img src="images/trophies.jpg" alt="Sports Trophies" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Sports Trophies</h4>
+                        <p>Gold, silver, and bronze trophies for sports events.</p>
+                    </div>
+                </div>
+                <div class="product-card trophy-card reveal">
+                    <img src="images/prod-tro-cup.jpg" alt="Corporate Trophies" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Corporate Trophies</h4>
+                        <p>Elegant trophies for corporate awards and ceremonies.</p>
+                    </div>
+                </div>
+                <div class="product-card trophy-card reveal">
+                    <img src="images/prod-tro-medals.jpg" alt="Gold Medals" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Gold Medals</h4>
+                        <p>Customizable gold medals with ribbons.</p>
+                    </div>
+                </div>
+                <div class="product-card trophy-card reveal">
+                    <img src="images/prod-tro-medals.jpg" alt="Silver Bronze Medals" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Silver & Bronze Medals</h4>
+                        <p>Full set of podium medals available.</p>
+                    </div>
+                </div>
+                <div class="product-card trophy-card reveal">
+                    <img src="images/prod-tro-cup.jpg" alt="Mementos" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Mementos</h4>
+                        <p>Custom mementos and plaques for special occasions.</p>
+                    </div>
+                </div>
+                <div class="product-card trophy-card reveal">
+                    <img src="images/prod-tro-shield.jpg" alt="Shield Awards" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Shield Awards</h4>
+                        <p>Wooden and acrylic shield plaques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====================================== -->
+    <!-- MEDICAL SUPPORT -->
+    <!-- ====================================== -->
+    <div class="product-section medical-section" data-category="medical" id="medical">
+        <div class="container">
+            <img src="images/medical.jpg" alt="Medical support" class="product-section-banner reveal" />
+            <div class="product-section-header reveal">
+                <div class="product-section-icon" style="background:linear-gradient(135deg,#22c55e,#16a34a);"><i
+                        class="fas fa-kit-medical"></i></div>
+                <div>
+                    <div class="product-section-title">Medical Support <small>Tynor Braces & Orthopedic Supports</small>
+                    </div>
+                </div>
+            </div>
+            <div class="product-grid">
+                <div class="product-card medical-card reveal">
+                    <img src="images/medical.jpg" alt="Knee Support" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Tynor Knee Support</h4>
+                        <p>Neoprene and elastic knee support braces for injury prevention and recovery.</p>
+                    </div>
+                </div>
+                <div class="product-card medical-card reveal">
+                    <img src="images/medical.jpg" alt="Elbow Support" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Tynor Elbow Support</h4>
+                        <p>Compression elbow sleeves for pain relief and stability.</p>
+                    </div>
+                </div>
+                <div class="product-card medical-card reveal">
+                    <img src="images/prod-med-brace.jpg" alt="Shin Calf Support" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Tynor Shin & Calf Support</h4>
+                        <p>Wraparound supports for shin splints and calf strains.</p>
+                    </div>
+                </div>
+                <div class="product-card medical-card reveal">
+                    <img src="images/medical.jpg" alt="Tennis Elbow Support" class="product-card-img" />
+                    <div class="product-card-body">
+                        <h4>Tynor Tennis Elbow Support</h4>
+                        <p>Targeted brace for lateral epicondylitis relief.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <div class="logo-ns">NS</div>
+                        <span>Naman Sports</span>
+                    </div>
+                    <p>Your one-stop shop for premium sports equipment, fitness gear, swimming costumes, trophies, and
+                        expert repair services.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/919022679663" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+919022679663" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#badminton">Badminton</a></li>
+                        <li><a href="#cricket">Cricket</a></li>
+                        <li><a href="#football">Football</a></li>
+                        <li><a href="#swimming">Swimming</a></li>
+                        <li><a href="#gym">Gym & Fitness</a></li>
+                        <li><a href="#trophies">Trophies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Store Info</h4>
+                    <p><i class="fas fa-map-marker-alt text-accent"></i> Shop No 10 & 11, Gopani Center, Gokul Township,
+                        Near Axis Bank & Naturals Ice Cream</p>
+                    <p style="margin-top:0.7rem;"><i class="fas fa-clock text-accent"></i> 11:00 AM – 9:30 PM (Open All
+                        Days)</p>
+                    <p style="margin-top:0.7rem;">
+                        <i class="fas fa-phone text-accent"></i>
+                        <a href="tel:+919022679663">9022679663</a>
+                        <a href="https://wa.me/919022679663" target="_blank" rel="noopener"
+                            style="color:var(--accent-green);margin-left:0.3rem;"><i class="fab fa-whatsapp"></i></a>
+                    </p>
+                    <p><i class="fas fa-phone text-accent"></i> <a href="tel:+919096683405">9096683405</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Naman Sports. All Rights Reserved. | In-Store Purchases Only
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/919022679663" class="whatsapp-float" target="_blank" rel="noopener"
+        aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
