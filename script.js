@@ -3,6 +3,30 @@
    Shared JS for all 4 pages
    ===================================================== */
 
+// ── 0. THEME TOGGLE ──
+(function initTheme() {
+  const saved = localStorage.getItem('ns-theme');
+  if (saved === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+})();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.getElementById('themeToggle');
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('ns-theme', 'light');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('ns-theme', 'dark');
+      }
+    });
+  }
+});
+
 // ── 1. PRELOADER ──
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
