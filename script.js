@@ -330,3 +330,145 @@ if (statsSection) {
   }, { threshold: 0.5 });
   statsObserver.observe(statsSection);
 }
+
+// ── 14. CATEGORY SLIDER ──
+(function initCatSlider() {
+  const slider = document.getElementById('catSlider');
+  const track = document.getElementById('catSliderTrack');
+  const prevBtn = document.getElementById('catPrev');
+  const nextBtn = document.getElementById('catNext');
+  const dotsContainer = document.getElementById('catDots');
+  if (!slider || !track) return;
+
+  const cards = track.querySelectorAll('.cat-card');
+  const totalCards = cards.length;
+  const gap = 24; // 1.5rem
+  let cardWidth = 280 + gap;
+  let currentIndex = 0;
+  let autoInterval = null;
+  let visibleCards = 1;
+
+  function calcDimensions() {
+    const sliderWidth = slider.offsetWidth;
+    const firstCard = cards[0];
+    const actualCardWidth = firstCard ? firstCard.offsetWidth : 280;
+    cardWidth = actualCardWidth + gap;
+    visibleCards = Math.floor(sliderWidth / cardWidth) || 1;
+  }
+
+  function maxIndex() {
+    return Math.max(0, totalCards - visibleCards);
+  }
+
+  function buildDots() {
+    dotsContainer.innerHTML = '';
+    const dotCount = maxIndex() + 1;
+    for (let i = 0; i < dotCount; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'cat-slider-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', `Slide ${i + 1}`);
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('.cat-slider-dot');
+    dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+  }
+
+  function goTo(index) {
+    currentIndex = Math.max(0, Math.min(index, maxIndex()));
+    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    updateDots();
+  }
+
+  function next() { goTo(currentIndex >= maxIndex() ? 0 : currentIndex + 1); }
+  function prev() { goTo(currentIndex <= 0 ? maxIndex() : currentIndex - 1); }
+
+  // Auto-play
+  function startAuto() {
+    stopAuto();
+    autoInterval = setInterval(next, 4000);
+  }
+  function stopAuto() {
+    if (autoInterval) { clearInterval(autoInterval); autoInterval = null; }
+  }
+
+  // Arrow buttons
+  if (prevBtn) prevBtn.addEventListener('click', () => { prev(); startAuto(); });
+  if (nextBtn) nextBtn.addEventListener('click', () => { next(); startAuto(); });
+
+  // Pause on hover
+  slider.addEventListener('mouseenter', stopAuto);
+  slider.addEventListener('mouseleave', startAuto);
+
+  // ── Drag / Swipe ──
+  let isDragging = false;
+  let startX = 0;
+  let startTranslate = 0;
+
+  function getTranslateX() {
+    const style = window.getComputedStyle(track);
+    const matrix = new DOMMatrix(style.transform);
+    return matrix.m41;
+  }
+
+  function onDragStart(x) {
+    isDragging = true;
+    startX = x;
+    startTranslate = getTranslateX();
+    track.classList.add('dragging');
+    stopAuto();
+  }
+
+  function onDragMove(x) {
+    if (!isDragging) return;
+    const diff = x - startX;
+    track.style.transform = `translateX(${startTranslate + diff}px)`;
+  }
+
+  function onDragEnd(x) {
+    if (!isDragging) return;
+    isDragging = false;
+    track.classList.remove('dragging');
+    const diff = x - startX;
+    if (Math.abs(diff) > 60) {
+      if (diff < 0) next(); else prev();
+    } else {
+      goTo(currentIndex);
+    }
+    startAuto();
+  }
+
+  // Mouse events
+  track.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+    onDragStart(e.clientX);
+  });
+  window.addEventListener('mousemove', (e) => onDragMove(e.clientX));
+  window.addEventListener('mouseup', (e) => onDragEnd(e.clientX));
+
+  // Touch events
+  track.addEventListener('touchstart', (e) => onDragStart(e.touches[0].clientX), { passive: true });
+  track.addEventListener('touchmove', (e) => onDragMove(e.touches[0].clientX), { passive: true });
+  track.addEventListener('touchend', (e) => onDragEnd(e.changedTouches[0].clientX));
+
+  // Prevent link clicks after drag
+  track.addEventListener('click', (e) => {
+    if (Math.abs(getTranslateX() - (-currentIndex * cardWidth)) > 5) {
+      e.preventDefault();
+    }
+  }, true);
+
+  // Init
+  function init() {
+    calcDimensions();
+    buildDots();
+    goTo(currentIndex);
+    startAuto();
+  }
+
+  init();
+  window.addEventListener('resize', () => { calcDimensions(); buildDots(); goTo(Math.min(currentIndex, maxIndex())); });
+})();
