@@ -189,37 +189,28 @@
                     </div>
                 </div>
 
-                <!-- RIGHT — Inquiry Form -->
-                <div class="contact-form reveal">
-                    <h3>Send Us an Inquiry</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject">
-                                <option value="general">General Inquiry</option>
-                                <option value="product">Product Availability</option>
-                                <option value="repair">Repair Service</option>
-                                <option value="bulk">Bulk / School Orders</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="How can we help you?"
-                                rows="5"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-                            <i class="fas fa-paper-plane"></i> Send Inquiry
-                        </button>
-                    </form>
+                <!-- RIGHT — Quick Connect Card -->
+                <div class="contact-info-card reveal"
+                    style="text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:3rem 2rem;">
+                    <div
+                        style="width:80px; height:80px; background:var(--gradient-accent); border-radius:var(--radius-md); display:flex; align-items:center; justify-content:center; font-size:2rem; color:#fff; margin-bottom:1.5rem;">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3
+                        style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; margin-bottom:0.5rem;">
+                        Get in Touch Instantly</h3>
+                    <p style="color:var(--text-secondary); font-size:0.95rem; margin-bottom:1.5rem; max-width:320px;">
+                        Have a question about product availability, pricing, or repairs? Reach out directly via WhatsApp
+                        for the fastest response!
+                    </p>
+                    <a href="https://wa.me/919022679663" class="btn btn-primary" target="_blank" rel="noopener"
+                        style="margin-bottom:1rem;">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <p style="font-size:0.82rem; color:var(--text-muted);">
+                        <i class="fas fa-store" style="margin-right:0.3rem;"></i> Or simply walk into our store — no
+                        appointment needed!
+                    </p>
                 </div>
 
             </div>
@@ -233,10 +224,7 @@
         </div>
     </section>
 
-    <!-- TOAST NOTIFICATION -->
-    <div class="toast" id="toast">
-        <i class="fas fa-check-circle"></i> Inquiry sent successfully! We'll get back to you soon.
-    </div>
+
 
     <!-- ========== FOOTER ========== -->
     <footer class="footer">
