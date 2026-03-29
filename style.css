@@ -1713,9 +1713,26 @@ ul {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 2.5rem;
   margin-bottom: 3rem;
+}
+
+.store-info-wrapper {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .store-info-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .footer h4 {
